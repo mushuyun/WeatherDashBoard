@@ -100,3 +100,15 @@ body {
   .p{
     font-size: 20px;
   }
+
+  @media screen and (max-width: 768px) {
+
+    body {
+      background-color: #333;
+    }
+  
+    .container {
+      width: 600px;
+    }
+  }
+ 
