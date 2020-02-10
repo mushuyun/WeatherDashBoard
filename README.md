@@ -5,10 +5,10 @@ This app is using api call to https://openweathermap.org/appid to track weather 
 
 There are three api calls are made, one is using city name as parameter to get general wether information and that specific city's latitude and longitue. Then the latitude and longitude data obtained from the prior call are used as parameters to track UV Index and fectch 5-day forcast. 
 
-__Here is the link to display this app._
+__Here is the link to display this app.__
 https://mushuyun.github.io/WeatherDashBoard/ 
 
-For your convenience, I've taken some screen shots to give you a rough idea about the interface. 
+_For your convenience, I've taken some screen shots to give you a rough idea about the interface._
 
 ![weatherDashBoard screenShot](images/weatherboard1.png)
 ![weatherDashBoard screenShot](images/weatherboard2.png)
