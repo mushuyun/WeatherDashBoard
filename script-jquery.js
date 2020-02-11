@@ -10,7 +10,7 @@ $("#date").html(new Date());
 
 //hardcode data showing default weather info
 $.ajax({
-  url: 'http://api.openweathermap.org/data/2.5/weather?q=Morrisville&APPID=80dbdb1e6f8e0d8a44b9a417a96e7403',
+  url: 'https://api.openweathermap.org/data/2.5/weather?q=Morrisville&APPID=80dbdb1e6f8e0d8a44b9a417a96e7403',
   method: "GET"
 })
   
@@ -26,7 +26,7 @@ $.ajax({
           };
           
           var iconcode = res.weather[0].icon;
-          var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+          var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
           $("#wicon").attr('src', iconurl);
          
           var result1 = $("<h6>").text("City: " + weatherDetail.city);
@@ -76,7 +76,7 @@ $("#search-btn").on("click", function(){
     if(city != ''){
     
       $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&APPID=80dbdb1e6f8e0d8a44b9a417a96e7403",
+        url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + "&APPID=80dbdb1e6f8e0d8a44b9a417a96e7403",
         method: "GET"
       })
         
@@ -92,7 +92,7 @@ $("#search-btn").on("click", function(){
                 };
                 
                 var iconcode = res.weather[0].icon;
-                var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+                var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
                 $("#wicon").attr('src', iconurl);
                
                 var result1 = $("<h6>").text("City: " + weatherDetail.city);
@@ -121,7 +121,7 @@ $("#search-btn").on("click", function(){
                    
                   $.ajax({
                   
-                    url: "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&APPID=80dbdb1e6f8e0d8a44b9a417a96e7403",
+                    url: "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&APPID=80dbdb1e6f8e0d8a44b9a417a96e7403",
                     method: "GET"
                   })
                   
