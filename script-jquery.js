@@ -132,7 +132,7 @@ $("#search-btn").on("click", function(){
                       var humi = forcast.list[i].main.humidity;
                       var icon = forcast.list[i].weather[0].icon;
                       
-                      var iconLink ='http://openweathermap.org/img/w/'+ icon + ".png";
+                      var iconLink ='https://openweathermap.org/img/w/'+ icon + ".png";
                       $("#wicon" + i).attr("src", iconLink);
                       
                       var res1 =  $("<p>").text("Tempreture: " + temp +" °C");
