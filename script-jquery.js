@@ -65,7 +65,7 @@ $("#search-btn").on("click", function(){
   
   var pastCities =  $("<p>").text(JSON.parse(localStorage.getItem("city")));
   $("#past-cities").append(pastCities);
-  localStorage.setItem("city", JSON.stringify(pastCities))
+  //localStorage.setItem("city", JSON.stringify(pastCities))
           
 });
 
