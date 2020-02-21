@@ -30,7 +30,7 @@ body {
     border: 2px solid black;
     justify-content: center;
     flex-direction: column;
-    background-image: url("sky1.jpg"); 
+    background-image: url("images/sky1.jpg"); 
   }
 
   .date{
