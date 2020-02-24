@@ -4,14 +4,6 @@
    var key;
    var lat;
    var lon;
-
-   //when loading use last entered city to load weather info
-   
-    var storage = window.localStorage;
-    city = JSON.parse(storage.city);
-    url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=bfc1b977d5f0ad912b3dc6c21e34e887";
-    apiCall(); 
-  
   
   // loading wether by enter city
  $("#search-btn").on("click", function(event){
@@ -143,4 +135,11 @@
    $("#day" + i).prepend(dayFuture);
  }
 
+//when loading use last entered city to load weather info
+   
+    var storage = window.localStorage;
+    city = JSON.parse(storage.city);
+    url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=bfc1b977d5f0ad912b3dc6c21e34e887";
+    apiCall(); 
+  
  
